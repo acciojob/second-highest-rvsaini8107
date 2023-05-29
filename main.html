@@ -10,22 +10,23 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			if(arr.length<=1 || new Set(arr)){
+			if(arr.length<=1){
 				return "-Infinity";
 			}
 			arr.sort()
 			return arr[arr.length-2];
 		}
 
-		function Main() {
+		function Main(n) {
 			//var n = prompt("Enter the number of elements");
-			var arr = [1,2,3,4,5];
+			var arr = [];
+            
 			for (var i = 0; i < n; i++) {
 				arr[i] = prompt("Enter element " + (i+1));
 			}
 			alert(secondHighest(arr));
 		}
-		Main();
+		Main(prompt("Enter how much value "));
 	</script>
 
     <script type="text/javascript" src="./script.js">
